@@ -1,0 +1,21 @@
+{
+  "sessionId": 1,
+  "mentorEmailId": "vineet@maveric-systems.com",
+  "menteeEmailId": "supriya@maveric-systems.com",
+  "sessionTopic": "java",
+  "fromDate": "2024-02-20T10:25:05.136Z",
+  "toDate": "2024-02-20T10:25:05.137Z",
+  "managerApproval": true,
+  "mentorApproval": true,
+  "managerComments": "good to go",
+  "requestCurrentlyWith": "manager",
+  "mentorComments": "good to go",
+  "sessionStatus": "REQUESTED",
+  "requestStatus": "ACCEPTED",
+  "mentorshipStatus": "ACTIVE",
+  "mentorName": "vineet",
+  "menteeName": "supriya",
+  "updatedDate": "2024-02-20",
+  "availableDate_1": "2024-02-20T10:25:05.137Z",
+  "availableDate_2": "2024-02-20T10:25:05.137Z"
+}

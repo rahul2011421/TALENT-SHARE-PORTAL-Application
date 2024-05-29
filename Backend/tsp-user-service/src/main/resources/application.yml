@@ -1,0 +1,33 @@
+server:
+  port: 8082
+
+tsp:
+  masterdata:
+    skillcategories: FRONTEND,BACKEND,UI_UX,FULLSTACK
+    technicalskills: JAVA,REACT,SPRINGBOOT,JAVASCRIPT,MICROSERVICES, PHP, PYTHON, KOTLIN, IOS, ANGULAR, SELENIUM, TEMENOS, KAFKA, C, C#, C++, .NET, RUBY, SWIFT,
+      VUE.JS, NODE.JS, EXPRESS, DJANGO, FLASK, MYSQL, POSTGRESQL, Oracle, MongoDB, Cassandra, Redis, Git, Bitbucket, Apache, Nginx, Android, JUnit,TDD, Docker, Kubernetes, Google Cloud, Maven, Gradle,JIRA, AGILE
+    domains: CORE_BANKING,RETAIL_BANKING,INSURANCE
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.97.43/USER
+    username: TSP
+    password: TSP@123
+
+  jpa:
+    show-sql : true
+    hibernate :
+      ddl-auto : update
+  properties:
+    hibernate:
+      dialect : org.hibernate.dialect.MySQL8Dialect
+      format_sql : true
+
+#Discovery server access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.97.43:8761/eureka

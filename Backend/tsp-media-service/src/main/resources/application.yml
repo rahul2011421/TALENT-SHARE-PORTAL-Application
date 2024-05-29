@@ -1,0 +1,32 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: media-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url : jdbc:mysql://192.168.97.43/MEDIA_SERVICE
+    username: TSP
+    password: TSP@123
+  jpa:
+    show-sql : true
+    hibernate :
+      ddl-auto : update
+  properties:
+    hibernate:
+      dialect : org.hibernate.dialect.MySQL8Dialect
+      format_sql : true
+
+#Discovery server access
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.97.43:8761/eureka
+
+springdoc:
+  api-docs:
+    enabled: false

@@ -1,0 +1,10 @@
+---
+server:
+  port: 8761
+eureka:
+  instance:
+    preferIpAddress: true
+    ipAddress: 192.168.97.43
+  client:
+    registerWithEureka: false
+    fetchRegistry: false

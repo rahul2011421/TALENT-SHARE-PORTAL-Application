@@ -1,0 +1,25 @@
+.bg-custom-color {
+    background-color: #0872BD;
+}
+
+.bg-gradient {
+    background-color: #0872BD;
+   background-image: linear-gradient( right,#055B99, #0872BD)
+}
+
+.login-hello_text {
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444444;
+    font-size: x-large;
+}
+
+.login-wellcome_tag_text {
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444444;
+    font-size: medium;
+}
+
+
+

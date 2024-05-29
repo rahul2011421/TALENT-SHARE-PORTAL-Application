@@ -1,0 +1,67 @@
+server:
+  port: 8080
+
+tsp:
+  KEY: "afafasfafafasfasfasfafacasdasfasxASFACASDFACASDFASFASFDAFASFASDAADSCSDFADCVSGCFVADXCcadwavfsfarvf"
+
+jwt:
+  header:
+    string: "Authorization"
+  token:
+    prefix: "Bearer"
+
+spring:
+  application:
+    name: API-Gateway
+  cloud:
+    gateway:
+      global-cors:
+        add-to-simple-url-handler-mapping: true
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://192.168.97.43:3002"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/profile/**
+
+        - id: notify-service
+          uri: lb://notify-service
+          predicates:
+            - Path=/mail/**
+
+        - id: media-service
+          uri: lb://media-service
+          predicates:
+            - Path=/media/**
+
+        - id: register-service
+          uri: lb://register-service
+          predicates:
+            - Path=/userDetails/**
+
+        - id: mentorshipRequest-service
+          uri: lb://mentorshipRequest-service
+          predicates:
+            - Path=/mentorship/**
+
+        - id: report-service
+          uri: lb://report-service
+          predicates:
+            - Path=/report/**
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.97.43:8761/eureka

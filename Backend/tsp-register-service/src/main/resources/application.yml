@@ -1,0 +1,79 @@
+server:
+  port: 8085
+
+tsp:
+  KEY: "afafasfafafasfasfasfafacasdasfasxASFACASDFACASDFASFASFDAFASFASDAADSCSDFADCVSGCFVADXCcadwavfsfarvf"
+  token:
+    validity: 60
+  algorithm: HS512
+  masterdata:
+    businessunits:
+      - DATA
+      - DIGITAL
+      - QE
+      - CORE
+    usergroups:
+      - ADMIN
+      - MANAGER
+      - MENTOR
+      - MENTEE
+  password:
+    length: 8
+    pattern : "^(?=.*[a-zA-Z])(?=.*[0-9].*[0-9])(?=.*[!@#$%^&*()-+=])(?=\\S+$).{8,15}$"
+    charecterset: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@$!%*?&"
+  tspsiteurl: http://192.168.97.43:3002/
+  email:
+    registration-mail-subject: Notification- New <userGroup> Registered.
+    forgot-password-mail-subject: Notification-Password Reset-Talent Share Portal
+    register-success-body: |
+      <html><body>
+      Dear <b><Name></b>,<br/><br/>
+      Congratulation for being a registered user of Talent Share Portal.<br/><br/>
+      Please click below link to update your profile & Password<br/><br/>
+      <a href="${tsp.tspsiteurl}">Talent-share-portal</a><br/><br/>
+      For First login, please use system Generated password. Later,<br/>
+      please change your password as per the acceptance criteria given in<br/>
+      the portal.<br/>
+      System Generated Password: <b><password></b>
+      </body></html>
+    forgot-password-body: |
+      <html><body>
+      Dear <b><Name></b>,<br/><br/>
+      Your password has been successfully reset!.<br/><br/>
+      Please click below link to update password<br/><br/>
+      <a href="${tsp.tspsiteurl}">Talent-share-portal</a><br/><br/>
+      For First login, please use system Generated password. Later,<br/>
+      please change your password as per the acceptance criteria given in<br/>
+      the portal.<br/>
+      System Generated Password: <b><password></b>
+      </body></html>
+
+
+spring:
+  application:
+    name: register-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.97.43/REGISTER
+    username: TSP
+    password: TSP@123
+
+
+
+  jpa:
+    show-sql : true
+    hibernate :
+      ddl-auto : update
+  properties:
+    hibernate:
+      dialect : org.hibernate.dialect.MySQL8Dialect
+      format_sql : true
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.97.43:8761/eureka
