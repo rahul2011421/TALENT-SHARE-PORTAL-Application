@@ -1,23 +1,23 @@
 
 
   <h1 align="center">Talent Share Portal</h1>
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Login%20page.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-</div>
 
-<br />
+   <div align="center" style="font-size: larger; font-weight: bold;">
+  TSP is a mentorship platform that facilitates tech exploration by fostering an environment of continuous learning culture. It implements user profiles for mentors who guide learners to explore tech stacks and gain new skills through extensive training.
+</div>
+<br/><br/>
+
+  ![Login Page](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Login%20page.png)
+   
+  
+
+<br /><br/>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-TSP is a mentorship platform that facilitates tech exploration by fostering an environment of continuous learning culture. It
-implements user profiles for mentors who guide learners to explore tech stacks and gain new skills through
-extensive training.
+The Talent Share Portal is a mentorship platform designed for employees to foster a collaborative and learning culture within the organization. Skilled individuals can act as mentors, offering guidance and mentorship to those seeking technical upliftment or guidance, referred to as mentees. The portal aims to invest in the growth of employees, providing opportunities for them to deepen their understanding of their roles and technology.
 
 
 ### Technology Stack
@@ -113,12 +113,16 @@ After the dependencies are installed, you can run the application with:
    ```
 
 
+<br/>
+
 <!-- KEY FEATURES -->
 ## Key Features
 
 ### User Management Module
 - **Admin Dashboard**: Centralized management of user profiles, creation of mentors, mentees, and managers, and deactivation of inactive users.
 - Admin functionalities for creating and managing user accounts, resetting passwords, and controlling profile details.
+  <br/> <br/>
+  ![Admin Dashboard](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Admin%20Dashboard.png)
 
 ### Notification System
 - **User Registration**: Automated email with login credentials.
@@ -130,15 +134,29 @@ After the dependencies are installed, you can run the application with:
 - **Session Scheduling**: Mentees can send session requests and schedule mentorship sessions.
 - **Notifications**: Automated notifications for session requests, acceptances, and rejections.
 
+
+   ![Mentee Dashboard](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Mentee%20Dashboard.png)
+
+<br/>
+
 ### Manager Functionality
 - **Approval Process**: Managers approve or reject mentorship requests and ensure alignment with organizational goals.
+<br/>
+
+  ![Manager Dashboard](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Manager%20Dashborad.png)
+
+  <br/>
   
 ### Mentor Functionality
 - **Session Requests**: Mentors can view and respond to mentorship session requests.
 - **Profile Review**: Mentors can review mentee profiles before accepting or rejecting requests.
 - **Availability**: Mentors can set their availability for scheduling sessions.
 
+  
 
+  ![Mentor Dashboard](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/Mentor%20Dashboard.png)
+
+<br/>
 
 <!-- SYSTEM ARCHITECTURE -->
 ## System Architecture
@@ -147,6 +165,8 @@ After the dependencies are installed, you can run the application with:
 - Built with Java and Spring Boot.
 - Consists of several microservices registered with Eureka Service for service discovery and load balancing via the API Gateway.
 - Key services include Register Service, User Service, Media Service, Mentorship Service, Report Service, and Notification Service.
+## Architecture Diagram
+![System Architecture Diagram](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/TSP%20Architecture.png)
 
 ### Frontend
 - Built with HTML, CSS, TypeScript, and React.js.
