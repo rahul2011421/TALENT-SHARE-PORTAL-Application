@@ -168,11 +168,14 @@ After the dependencies are installed, you can run the application with:
 ## Architecture Diagram
 ![System Architecture Diagram](https://github.com/rahul2011421/Talent-share-Portal-Application/blob/master/images/TSP%20Architecture.png)
 
+
+<br/>
+
 ### Frontend
 - Built with HTML, CSS, TypeScript, and React.js.
 - The root component is the App Component, containing the Router for navigating between pages.
 
-
+<br/>
 
 
 <!-- Author -->
