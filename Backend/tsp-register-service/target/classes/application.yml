@@ -56,7 +56,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost/REGISTER
     username: root
-    password: root
+    password: Maveric
 
 
 

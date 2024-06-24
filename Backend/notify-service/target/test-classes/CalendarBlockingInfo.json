@@ -1,0 +1,12 @@
+{
+  "fromDateAndTime" : "2024-02-11T10:05:11.818139",
+  "fromTimeZone" : "IST",
+ "endDateAndTime" :  "2024-03-11T10:05:11.818139",
+  "endTimeZone" : "IST",
+  "mentorEmail" : "vineet@maveric-systems.com",
+  "menteeEmail" : "shwethasi@maveric-systems.com",
+  "sessionTopic" : "JAVA",
+  "location" : "Bangalore",
+  "content" : "This is the content of the session."
+
+}
