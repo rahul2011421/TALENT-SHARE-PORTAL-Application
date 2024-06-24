@@ -6,7 +6,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.tsp.registerservice.client.NotificationClient;
 import com.tsp.registerservice.client.UserserviceClient;
 import com.tsp.registerservice.config.MasterData;
-import com.maveric.tsp.registerservice.dto.*;
+import com.tsp.registerservice.dto.*;
 import com.tsp.registerservice.entities.UserDetails;
 import com.tsp.registerservice.exception.InvalidCredentialsException;
 import com.tsp.registerservice.exception.InvalidInputException;

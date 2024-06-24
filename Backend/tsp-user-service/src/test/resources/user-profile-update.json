@@ -1,8 +1,8 @@
 {
   "empId": 1008892,
-  "emailId": "vineet@maveric-systems.com",
-  "firstName": "vineet",
-  "lastName": "semawal",
+  "emailId": "rahulyadavv2011421@gmail.com",
+  "firstName": "rahul",
+  "lastName": "yadav",
   "userGroup": "mentor",
   "businessUnit": "digital",
   "professionalSummary": "10+ years of experience in fullstack development",
@@ -21,7 +21,7 @@
       "roleDescription": "full stack development",
       "duration": 1,
       "toolsAndFramework": "spring,react",
-      "client": "maverics"
+      "client": "XYZ"
     }
   ],
   "domainList": [

@@ -7,9 +7,9 @@ spring:
     name: mentorshipRequest-service
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.97.43/MENTORSHIP
-    username: TSP
-    password: TSP@123
+    url: jdbc:mysql://localhost/MENTORSHIP
+    username: root
+    password: root
 
   jpa:
     show-sql : true
@@ -27,7 +27,7 @@ tsp:
       timezone: India Standard Time
       content: Your calendar blocked for the mentorship session for the topic
       endminutes: 60
-  tspsiteurl: http://192.168.97.43:3002/
+  tspsiteurl: http://localhost:3002/
   email:
     set-subject-approval: Notification- Requesting Approval for Mentorship Session.
     set-subject-rejected: Notification- Mentorship Session has been rejected.
@@ -63,7 +63,7 @@ tsp:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://192.168.97.43:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 
 
 springdoc:

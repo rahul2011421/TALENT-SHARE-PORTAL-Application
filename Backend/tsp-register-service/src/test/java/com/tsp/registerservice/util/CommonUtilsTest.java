@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.tsp.registerservice.config.MasterData;
-import com.maveric.tsp.registerservice.dto.*;
+import com.tsp.registerservice.dto.*;
 import com.tsp.registerservice.dto.ReportRequestDto;
 import com.tsp.registerservice.exception.InvalidInputException;
 import lombok.extern.slf4j.Slf4j;

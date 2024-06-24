@@ -1,0 +1,75 @@
+
+server:
+  port: 8084
+
+spring:
+  application:
+    name: mentorshipRequest-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/MENTORSHIP
+    username: root
+    password: Maveric
+
+  jpa:
+    show-sql : true
+    hibernate :
+      ddl-auto : update
+  properties:
+    hibernate:
+      dialect : org.hibernate.dialect.MySQL8Dialect
+      format_sql : true
+
+tsp:
+  calendar:
+    blockingcontent:
+      location: Online-Teams Meeting
+      timezone: India Standard Time
+      content: Your calendar blocked for the mentorship session for the topic
+      endminutes: 60
+  tspsiteurl: http://localhost:3002/
+  email:
+    set-subject-approval: Notification- Requesting Approval for Mentorship Session.
+    set-subject-rejected: Notification- Mentorship Session has been rejected.
+    set-subject-approved: Notification- Mentorship Session has been approved.
+    approval-body: |
+      <html><body>
+      <b>Dear <recipientName>,<br/><br/>
+      You have received <mailTo> approval request from Talent Share Portal.
+      for mentorship</b><br/><br/>
+      <b>One of our registered mentee <mentee> and <professionalSummary> <br/>
+      requested for mentorship<br/>
+      Please click below link to provide your approval to proceed further.</b><br/>
+      <a href="${tsp.tspsiteurl}">Talent-share-portal.</a><br/><br/>
+      </body></html>
+    session-approved-notification-to-mentee: |
+      <html><body>
+      <b>Dear <recipientName> <br/><br/>
+      Your mentorship request has been approved <comments>.<br/><br/>
+      </body></html>
+    session-approved-notification-to-mentee-manager: |
+      <html><body>
+      <b>Dear <recipientName> <br/><br/>
+      <mentee> had raised a request for mentorship on topic <sessionTopic> to <mentorEmailid>
+      has been approved.</b><br/><br/>
+      </body></html>
+    session-rejected-notification-to-mentee: |
+      <html><body>
+      <b>Dear <recipientName>,<br/><br/>
+      Your mentorship request has been rejected. Rejection Comments-> <comments>.<br/><br/>
+      </body></html>
+
+#Discovery server access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+springdoc:
+  api-docs:
+    enabled: false
+
+
+
+

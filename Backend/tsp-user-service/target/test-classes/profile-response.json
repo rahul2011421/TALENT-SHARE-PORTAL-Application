@@ -1,0 +1,32 @@
+{
+  "emailId": "vineet@maveric-systems.com",
+  "empId": 1008899,
+  "firstName": "vineet",
+  "lastName": "semawal",
+  "managerName": "praveen",
+  "userGroup": "mentor",
+  "professionalSummary": "110+ years of experience in fullstack development",
+  "designation": "developer",
+  "totalExperience": 10,
+  "profileStatus": true,
+  "skillCategory": "backend",
+  "managerMailId": "praveen@maveric-systems.com",
+  "technicalSkillList": [
+    "java",
+    "springboot"
+  ],
+  "userProjectExperienceList": [
+    {
+      "projectName": "talent-share-protal",
+      "role": "developer",
+      "roleDescription": "full stack development",
+      "duration": 1,
+      "toolsAndFramework": "spring,react",
+      "client": "maverics"
+    }
+  ],
+  "domainList": [
+    "insurance",
+    "CORE_BANKING"
+  ]
+}

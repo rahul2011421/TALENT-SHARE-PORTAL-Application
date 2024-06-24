@@ -1,8 +1,8 @@
 {
-  "emailId": "vineet@maveric-systems.com",
-  "empId": 1008899,
-  "firstName": "vineet",
-  "lastName": "semawal",
+  "emailId": "rahulyadavv2011421@gmail.com",
+  "empId": 100,
+  "firstName": "rahul",
+  "lastName": "yadav",
   "managerName": "praveen",
   "userGroup": "mentor",
   "professionalSummary": "110+ years of experience in fullstack development",
@@ -10,7 +10,7 @@
   "totalExperience": 10,
   "profileStatus": true,
   "skillCategory": "backend",
-  "managerMailId": "praveen@maveric-systems.com",
+  "managerMailId": "praveen@gmail.com",
   "technicalSkillList": [
     "java",
     "springboot"
@@ -22,7 +22,7 @@
       "roleDescription": "full stack development",
       "duration": 1,
       "toolsAndFramework": "spring,react",
-      "client": "maverics"
+      "client": "XYZ"
     }
   ],
   "domainList": [

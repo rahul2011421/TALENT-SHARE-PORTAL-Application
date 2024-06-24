@@ -1,0 +1,24 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>localhost:8086</destination>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <customFields>{"service_name":"mentorship"}</customFields>
+        </encoder>
+        <keepAliveDuration>1 seconds</keepAliveDuration>
+    </appender>
+    <root level="DEBUG">
+        <appender-ref ref="STASH"/>
+    </root>
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="stash"/>
+    </root>
+    <logger name="org.springframework.web" level="DEBUG"/>
+</configuration>

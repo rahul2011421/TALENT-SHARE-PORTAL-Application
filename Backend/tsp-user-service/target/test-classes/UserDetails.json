@@ -1,0 +1,13 @@
+{
+  "empId": 100938,
+  "emailId": "vineet@maveric-systems.com",
+  "firstName": "vineet",
+  "lastName": "semawal",
+  "userGroup": "mentor",
+  "businessUnit": "digital",
+  "status": true,
+  "passwordReset": true,
+  "createdBy": "admin",
+  "exitDate": null,
+  "createdDateTime": "2024-02-11T10:05:11.818139"
+}
